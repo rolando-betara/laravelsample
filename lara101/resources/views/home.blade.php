@@ -11,7 +11,7 @@
 		  </div>
 		</div>
 		<div class="row">
-			<small> <a href="{{ url('/employees/create') }}">New Employee</a></small>
+			<small> <a href="{{ url('/employees/create') }}">New Employee</a> | <a href="{{ url('/employees') }}">Employees List</a></small>
 		</div>
   	</div>
 @endsection

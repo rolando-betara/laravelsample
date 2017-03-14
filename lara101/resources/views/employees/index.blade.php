@@ -12,6 +12,8 @@
                             <div class="top-bar-left">
                                 <ul class="dropdown menu menu-f-color" data-dropdown-menu>
                                     <li><a href="{{ url('/') }}">Search</a></li>
+                                    <li><a href="{{ url('/employees') }}">Employees</a></li>
+                                     <li><a href="{{ url('/employees/create') }}">Add Employees</a></li>
                                     {{-- <li class="has-submenu">
                                         <a href="#"></a>
                                         <ul class="submenu menu vertical" data-submenu>

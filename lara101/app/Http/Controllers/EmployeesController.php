@@ -69,7 +69,8 @@ class EmployeesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $empid = employee::find($id);
+        return view('employees.edit', compact('empid'));
     }
 
     /**
@@ -81,7 +82,18 @@ class EmployeesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $employee = employee::find($id);
+        $employee->surname = $request->surname;
+        $employee->first_name = $request->f_name;
+        $employee->middle_name = $request->m_name;
+        $employee->date_birth = $request->d_birth;
+        $employee->place_birth = $request->p_birth;
+        $employee->gender = $request->gender;
+        $employee->civil_status = $request->c_status;
+        $employee->citizenship = $request->citizenship;
+        $employee->save();
+        
+        return redirect('/employees');
     }
 
     /**
