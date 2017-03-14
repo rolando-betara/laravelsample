@@ -1,0 +1,44 @@
+body {
+    background: url('/img/halftone.png');
+    background-repeat: repeat; 
+}
+.verticalAlign {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);			
+}
+.sticky {
+  width: 100%;
+}
+.top-bar, .menu-bg-color ul{
+    background-color: #fbbf3e;
+}
+.btnGreen {
+    background-color: #22bb5b;
+}
+.btnGreen:hover{
+     background-color:  #3adb76;
+}
+.marginBottom10px{
+    margin-bottom: 10px;
+}
+.menu-f-color a{
+    color: #fff;
+}
+.menu-f-color a:hover{
+    color: #1779ba;
+}
+.fi-torsos-male-female{
+    font-size: 140px;  
+}
+.imgSize{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Background pattern from Subtle Patterns */
