@@ -31,9 +31,10 @@
         <div class="row">
             <div class="large-8 large-offset-2 columns">
                 <div class="callout">
-                    <form action="/employees" method="post">
+                    <form action="/employees/@yield('editId')" method="post">
                     {{csrf_field()}}
-                    
+                    @section('editMethod')
+                     @show
                     <div class="row">
                         <div class="large-3 columns">
                             <div class="thumbnail">

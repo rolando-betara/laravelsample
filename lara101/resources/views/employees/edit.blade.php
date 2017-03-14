@@ -1,5 +1,6 @@
 @extends('employees.create')
 
+@section('editId', $empid->id)
 @section('editSurname', $empid->surname)
 @section('editFname', $empid->first_name)
 @section('editMname', $empid->middle_name)
@@ -22,4 +23,8 @@
         <option value="widowed"     @if($empid->civil_status === "widowed") selected="selected" @endif>Widowed</option>
         <option value="separeted"   @if($empid->civil_status === "separeted") selected="selected" @endif>Separeted</option>
     </select>
+@endsection
+
+@section('editMethod')
+    {{method_field('PUT')}}
 @endsection
