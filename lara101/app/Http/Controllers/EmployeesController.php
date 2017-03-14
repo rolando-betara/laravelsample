@@ -47,6 +47,7 @@ class EmployeesController extends Controller
         $employee->citizenship = $request->citizenship;
         $employee->save();
         // return $request->all();
+        return redirect('/employees');
     }
 
     /**
